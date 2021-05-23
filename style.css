@@ -1,0 +1,86 @@
+header {
+    /* Set the background color to dark blue*/
+    background-color: #0B1C51;
+    /* Adds 40 pixels of space under the header so that the main content isn't so close to the navigation*/
+    margin-bottom: 40px;
+    
+    
+
+}
+
+header h1 {
+    /*color of the text */
+    color: whitesmoke;
+    /* Align the heading in the center*/
+    text-align: center;
+    /* Remove the default margin and spacing around the 'h1' element*/
+    margin: 0;
+    /* Push the text 20 pixels down the page*/
+    padding-top: 20px;
+    /* Make the heading font size 52 pixels in mobile mode*/
+    font-size: 52px;
+}
+
+header nav {
+    /* Change the display property from default to flex*/
+    display: flex;
+/* Centers anelement defined as display: flex */
+    justify-content: center;
+}
+
+header nav ul {
+    /* Changes the display property from its default to 'flex'. */
+    display: flex;
+ /* ^ Helps the navigation to display in a single row  */
+    
+    /* Removes the padding to the left of the unordered list*/
+    padding-left: 0;
+    /* Get rid of the bullet points*/
+    list-style: none;
+}
+
+header nav ul li a {
+    /* The link color is white*/
+    color: whitesmoke;
+    /* Removes the underline*/
+    text-decoration: none;
+    /* Applies 20 pixels of margin to the right of each link, creating a visual gap in between*/
+    margin: 0 20px 0 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 300;
+}
+
+header nav ul li:last-child a {
+    /* Removes the margin to the right of the last anchor tag so that the nav appears centered*/
+    margin-right: 0;
+}
+
+@media all and (min-width: 600px) {
+    header {
+        /* Changes the default setting from block to flex*/
+        display: flex;
+        /*Pushes the items (the title and the nav) to the far side of the browser with space between them*/
+
+        justify-content: space-between;
+
+        /*Adds 0 pixels to top and bottom, 30 pixels to top and right*/
+        padding: 0 30px;
+    }
+
+    header h1 {
+    /* Sets 14 pixels of margin above and below the 'h1' and sets 0 pixels of margin tothe left and right.*/
+    margin: 14px 0;
+    /* Removes or sets 0 pixels of padding above the 'h1'*/
+    padding-top: 0;
+}
+
+    header nav {
+    /* Pushes the navigation contianer down by 8 pixels to present a little better visually within the space.*/
+    margin-top: 8px;
+        /*Centers the navigation links to the center*/
+    align-items: center;
+}
+}
+
+
+
